@@ -7,23 +7,48 @@
   font-family: JetBrains-small;
   src: url(./assets/JetBrainsMono-VariableFont_wght.ttf);
   font-weight: normal;
-  font-size: 11pt;
 }
 
+@media (resolution >= 150dpi){
 
-h1 {
-  font-family: JetBrains-large;
-  font:700;
-  /* transform: rotate(20deg); */
+  button {
+    font-family: JetBrains-small;
+    font-style: normal;
+    font-size: 32pt;
+  }
+  h1 {
+    font-family: JetBrains-large;
+    font-style: bold;
+    font-size: 46pt;
+  }
+  p {
+    font-family: JetBrains-small;
+    font-style: normal;
+    font-size: 12pt;
+  }
 }
 
-div {
-  margin: auto;
-}
+@media (resolution < 150dpi){
 
-.app {
-  margin-left: 0px;
-  margin-right: 0px;
+  button {
+    font-family: JetBrains-small;
+    font-style: normal;
+    font-size: 12pt;
+  }
+  h1 {
+    font-family: JetBrains-large;
+    font-style: bold;
+    font-size: 24pt;
+  }
+  p {
+    font-family: JetBrains-small;
+    font-style: normal;
+    font-size: 12pt;
+  }
+}
+.center {
+  text-align: center;
+  align-self: center;
 }
 
 .main-container {
@@ -39,6 +64,5 @@ div {
   background: center;
   background-color:gold;
   border-radius: 10px;
-  font-family: JetBrains-small;
   text-align: center;
 }

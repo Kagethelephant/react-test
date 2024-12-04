@@ -1,16 +1,22 @@
 import './App.css'
+import { Home } from './pages/Home'
+import { About } from './pages/About' 
+import { Layout } from './Layout'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
 
   return (
-    <div className='center'>
-      <h1 className='center'>Home Page In JetBrains Mono new</h1>
-      <div className='center'>
-        <p className='item'>item1</p>
-        <p className='item'>item2</p>
-        <p className='item'>item3</p>
-      </div>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route element={<Layout/>}>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/About' element={<About/>}/>
+          </Route>
+        </Routes>
+      </Router>
+    </>
   )
 }
 
